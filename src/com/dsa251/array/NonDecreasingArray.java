@@ -11,9 +11,10 @@ public class NonDecreasingArray {
 			
 			if(arr[i] > arr[i+1]){
 				req++;
+				//to keep before i subarray in non decreasing
 				if(i > 0 && arr[i+1] < arr[i-1]){
 					arr[i+1] = arr[i];
-				}else{
+				}else{  //to keep after i subarray in non decreasing
 					arr[i] = arr[i+1];
 				}
 			}
